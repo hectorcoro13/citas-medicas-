@@ -1,0 +1,96 @@
+/* Estilo general de las tarjetas */
+.appointmentCard {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #e3f2fd; /* Fondo azul claro */
+    border: 1px solid #90caf9; /* Borde azul */
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px; /* Tamaño fijo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .appointmentCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Encabezado de la tarjeta */
+  .appointmentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .appointmentHeader h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .statusActive {
+    font-size: 12px;
+    font-weight: bold;
+    color: #4caf50;
+    background-color: #e8f5e9;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  
+  .statusInactive {
+    font-size: 12px;
+    font-weight: bold;
+    color: #f44336;
+    background-color: #ffebee;
+    padding: 2px 8px;
+    border-radius: 12px;
+  }
+  
+  /* Detalles de la cita */
+  .appointmentDetails {
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+    width: 100%;
+  }
+  
+  .appointmentDetails p {
+    margin: 5px 0;
+  }
+  
+  .appointmentDetails span {
+    font-size: 14px;
+    color: #1a73e8;
+    font-weight: bold;
+  }
+  .cancelButton {
+    display: block;
+    margin: 20px auto; /* Centrar el botón horizontalmente */
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cancelButton:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+  }
+  
+  .disabledButton {
+    background-color: #007bff; /* Mantener azul */
+    color: white; /* Asegurar que el texto permanezca legible */
+    cursor: not-allowed;
+    opacity: 0.6; /* Dar apariencia de deshabilitado */
+  }
+  
+  

@@ -1,0 +1,112 @@
+/* Contenedor principal */
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9; /* Fondo claro */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Título del formulario */
+.formTittle {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de grupos de formulario */
+.formGroup {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas del formulario */
+.formLabel {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Entradas del formulario */
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Cambio de estilo en las entradas al hacer focus */
+.formInput:focus {
+    border-color: #007BFF;
+}
+
+/* Etiquetas de error */
+.errorLabel {
+    display: block;
+    color: #e74c3c; /* Rojo para errores */
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Botón de envío */
+.formButton {
+    background-color: #007BFF; /* Color azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efecto de hover en el botón */
+.formButton:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+/* Estilo del botón cuando está deshabilitado */
+.formButton:disabled {
+    background-color: #ccc; /* Color gris */
+    cursor: not-allowed; /* Cambia el cursor */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .formContainer {
+        padding: 20px;
+    }
+
+    .formInput {
+        font-size: 12px;
+    }
+
+    .formButton {
+        font-size: 14px;
+    }
+}
+
+.Register {
+    color: red; /* Color del texto */
+    text-decoration: underline; /* Subrayado */
+    margin: 10px; /* Margen alrededor del enlace */
+    padding: 5px; /* Espaciado interno dentro del enlace */
+    font-weight: bold; /* (Opcional) Hacerlo más llamativo */
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+    cursor: pointer; /* Asegúrate de que parezca clickeable */
+}
+
+.Register:hover {
+    color: darkred; /* Cambia el color al pasar el ratón (opcional) */
+    text-decoration: none; /* Quita el subrayado al hacer hover (opcional) */
+}

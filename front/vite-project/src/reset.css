@@ -1,0 +1,49 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Heredar estilos principales */
+  html {
+    font-size: 100%; /* 16px por defecto */
+    line-height: 1.5; /* Espaciado de texto */
+    -webkit-text-size-adjust: 100%; /* Ajuste para dispositivos móviles */
+    scroll-behavior: smooth; /* Scroll suave */
+  }
+  
+  body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif; /* Cambia por tu fuente */
+    text-rendering: optimizeSpeed; /* Optimización para renderizado */
+    background-color: #fff;
+    color: #000;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto */
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  button, input, select, textarea {
+    font: inherit;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  
+
+  

@@ -1,0 +1,51 @@
+/* NotFound.module.css */
+
+/* Estilos generales */
+.border {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    background-color: #f4f7f6; /* Fondo suave */
+    color: #333; /* Color de texto oscuro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .text {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #e63946; /* Rojo suave para destacar */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .texto1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #606c71; /* Color gris suave */
+    line-height: 1.5;
+  }
+  
+  .Link {
+    font-size: 1.2rem;
+    background-color: #2a9d8f; /* Color atractivo */
+    color: #fff; /* Texto blanco */
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s; /* Efecto suave */
+  }
+  
+  .Link:hover {
+    background-color: #264653; /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandar */
+  }
+  
+  .Link:active {
+    background-color: #1d3557; /* Color más oscuro al hacer clic */
+  }
+  
