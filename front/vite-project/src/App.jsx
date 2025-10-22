@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './view/Home/Home';
 import Login from './view/Login/Login';
-import MisTurnos from './view/MisTurnos/misTurnos';
+import MisTurnos from './view/MisTurnos/MisTurnos';
 import Register from './view/Register/Register';
 import NotFound from './components/Not found/NotFound';
 import Navbar from './components/Navbar/Navbar';
