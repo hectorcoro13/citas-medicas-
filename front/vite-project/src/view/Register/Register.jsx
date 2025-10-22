@@ -1,4 +1,4 @@
-import { RegisterFormValidates } from "../../helpers/Validates"
+import { RegisterFormValidates } from "../../helpers/validates"
 import Styles from "./Reguster.module.css"
 import { useFormik } from "formik"
 // import axios from "axios"
