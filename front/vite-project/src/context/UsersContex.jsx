@@ -22,12 +22,12 @@ const [user, setUser] = useState(localStorage.getItem('user') ?? false);
 const  [userAppointments, setUserAppointments] = useState([])
 
 const registerUser = async(userData) => {
-   return await axios.post("http://localhost:3000/users/register", userData)
+   return await axios.post("https://citas-medicas-back.onrender.com/users/register", userData)
 }
 
 
 const loginUser = async (loginUser) =>{
-     const res = await  axios.post("http://localhost:3000/users/login", loginUser)
+     const res = await  axios.post("https://citas-medicas-back.onrender.com/users/login", loginUser)
     localStorage.setItem('user', res.data.user.id)
     setUser(res.data.user.id)
     return res
@@ -42,17 +42,17 @@ const logOut = () =>{
 
 
 const createdAppointment = async (values) =>{
-  await  axios.post (`http://localhost:3000/appointments/schedule` , values)
+  await  axios.post (`https://citas-medicas-back.onrender.com/appointments/schedule` , values)
 }
 
 const getUserAppointments = async (userId) =>{
-   const {data} =  await axios.get(`http://localhost:3000/users/${userId}`)
+   const {data} =  await axios.get(`https://citas-medicas-back.onrender.com/users/${userId}`)
    setUserAppointments ( data.appointments)
   
    
 }
 const cancelUserAppointment = async (appointmentId) =>{
-   await axios.put(`http://localhost:3000/appointments/cancel/${appointmentId}`)
+   await axios.put(`https://citas-medicas-back.onrender.com/appointments/cancel/${appointmentId}`)
     const newAppointments = userAppointments.map((appointment)=> appointment.id === appointmentId ? {...appointment,status: "cancelled"}: appointment)
     setUserAppointments(newAppointments)
 }
