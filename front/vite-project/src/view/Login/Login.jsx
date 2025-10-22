@@ -2,7 +2,7 @@ import Styles from "./Login.module.css";
 import { useFormik } from "formik";
 // import axios from "axios";
 import Swal from "sweetalert2";
-import { loginFormValidates } from "../../helpers/Validates";
+import { loginFormValidates } from "../../helpers/validates";
 import { Link, useNavigate, } from "react-router-dom";
 import { useContext } from "react";
 import { UsersContext } from "../../context/UsersContex";
