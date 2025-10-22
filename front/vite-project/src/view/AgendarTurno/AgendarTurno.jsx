@@ -1,6 +1,6 @@
 import { useFormik } from "formik";
 import styles from "./AgendarTurno.module.css"; 
-import { dateTimeValidates } from "../../helpers/Validates";
+import { dateTimeValidates } from "../../helpers/validates";
 import { useContext } from "react";
 import { UsersContext } from "../../context/UsersContex";
 import Swal from "sweetalert2";
